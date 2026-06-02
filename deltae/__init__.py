@@ -7,7 +7,7 @@ def delta_e_1976(Lab1, Lab2):
     """
     Takes Lab values as a dictionary and outputs a DeltaE1976 calculation
 
-    Example Dictionarys:
+    Example Dictionaries:
     Lab1 = {'L': 50.00, 'a': 2.6772, 'b': -79.7751}
     Lab2 = {'L': 50.00, 'a': 0.00, 'b': -82.7485}
     """
@@ -22,7 +22,7 @@ def delta_e_2000(Lab1, Lab2, verbose=False, test=False, formula='Rochester'):
     """
     Takes Lab values as a dictionary and outputs a DeltaE2000 calculation
 
-    Example Dictionarys:
+    Example Dictionaries:
     Lab1 = {'L': 50.00, 'a': 2.6772, 'b': -79.7751}
     Lab2 = {'L': 50.00, 'a': 0.00, 'b': -82.7485}
 
@@ -139,7 +139,7 @@ def delta_e_2000(Lab1, Lab2, verbose=False, test=False, formula='Rochester'):
     DE2000 = math.sqrt((dLPrime / (kL * sL)) * (dLPrime / (kL * sL)) + (dCPrime / (kC * sC)) * (dCPrime / (kC * sC)) +
                        (dHPrime / (kH * sH)) * (dHPrime / (kH * sH)) + (dCPrime / (kC * sC)) * (dHPrime / (kH * sH)) * rT)
 
-    # If arbitury Keyword arg verbose=True then print out the below
+    # If arbitrary Keyword arg verbose=True then print out the below
     if verbose == True:
 
         decoration = '-'*20
